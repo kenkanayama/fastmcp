@@ -14,6 +14,12 @@ API仕様の標準化（例：RESTなど）と似た思想で、今後のLLM連�
 全体的に、まだエコシステムとしてはこれから拡大していく段階だとは思うが、
 開発者目線で見れば、LLMを中心としたツールのモジュール化・相互運用性の基盤として簡易的だと感じた。
 
+---
+
+以下にサービス公式MCPなどなどがある。これらを見ると構築方法の勉強になる。
+https://github.com/modelcontextprotocol/servers/tree/main
+
+
 ## Claude for Desktop に当MCPサーバーを設定する
 
 ### 1. `claude_desktop_config.json`に以下を登録する
