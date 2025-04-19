@@ -8,5 +8,4 @@ COPY . .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# コンテナが終了しないようにする
-CMD ["sh", "-c", "while true; do sleep 3600; done"]
+CMD ["python", "mcp_server.py"]
