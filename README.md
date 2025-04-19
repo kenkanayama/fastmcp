@@ -1,10 +1,10 @@
-## やったことと
+## やったこと
 
-Docker環境でFastMCPを使いMCPサーバーを自作しClaudeで使ってみた。
+Docker環境でFastMCPを使いMCPサーバーを自作しClaudeに繋げて試してみた。
 
-## 感想（MCPサーバーをDocker環境で構築して試した所感）
-浅いところでいうと、prompt や resource はLLMを活用した各社ツールの裏側にあるプロンプト設計やリソース取得機構に近く、
-tool OpenAI の Function Calling に対応するようなものだと感じた。
+## 感想
+浅いところでいうと、`prompt` と `resource` はLLMを活用した各社ツールの裏側にあるプロンプト設計やリソース取得ロジックに近く、
+`tool` はOpenAI の Function Calling に対応するようなものだと感じた。
 
 ただしこのMCPという規格に則って構築することが大事であり強み。
 MCPサーバー側がtool, prompt, resourceといった統一されたインターフェースで実装されていれば、
@@ -22,7 +22,7 @@ https://github.com/modelcontextprotocol/servers/tree/main
 
 ## Claude for Desktop に当MCPサーバーを設定する
 
-### 1. `claude_desktop_config.json`に以下を登録する
+### 1. 設定 > 開発者 から`claude_desktop_config.json`に以下を登録する
 
 ```
 {
